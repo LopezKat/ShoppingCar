@@ -13,8 +13,6 @@ import Compra from './src/scenes/Compra';
 import Formulario from './src/scenes/Formulario';
 import Finalizado from './src/scenes/Finalizado';
 
-
-
 const AppNavigator = StackNavigator(
   {
     CatalogoScreen: {
