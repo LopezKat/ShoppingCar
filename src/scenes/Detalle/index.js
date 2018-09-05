@@ -38,7 +38,6 @@ class Detalle extends Component {
         return (
             <View>
                 <ItemDetalle detalle={this.state.detalle} navigation={ this.props.navigation } />                  
-
             </View>
         );
     }

@@ -3,14 +3,14 @@ import { Text, View, StyleSheet, Image, TouchableHighlight } from 'react-native'
 
 const ItemCatalogo = (props) => (
     <TouchableHighlight 
-        onPress={( )=> props.navigation.navigate('DetalleScreen')}
+        onPress={( )=> props.navigation.navigate('DetalleScreen', {idProduct: props.catalogo._id})}
         underlayColor="#ccc"  
     >
         <View style={styles.container}>
             <View>
                 <Image 
                     style={styles.image}
-                    source={{ uri: props.catalogo.product}}
+                    source={{ uri: props.catalogo.image}}
                 />           
             </View>
             <View style={styles.content}>
