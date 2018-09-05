@@ -7,7 +7,7 @@ const ItemDetalle = (props) => (
             <View>
                 <Image
                     style={styles.image}
-                    source={{ uri: props.detalle.product }}
+                    source={{ uri: props.detalle.avatar}}
                 />
             </View>
             <View style={styles.content}>
@@ -17,8 +17,8 @@ const ItemDetalle = (props) => (
         </View>
         <View>
             <View style={styles.specifications}>
-                <Text style={styles.contactTitulo}>{props.detalle.titulo}</Text>
-                <Text>{props.detalle.descripcion}</Text>
+                <Text style={styles.contactTitulo}>{props.detalle.quantity}</Text>
+                <Text>{props.detalle.description}</Text>
                 <Button
                     title="Añadir al Carrito"
                     onPress={() => { props.navigation.navigate('CompraScreen') }}//No se utiliza this.props ya que es una función
