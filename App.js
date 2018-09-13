@@ -12,6 +12,7 @@ import Detalle from './src/scenes/Detalle';
 import Compra from './src/scenes/Compra';
 import Formulario from './src/scenes/Formulario';
 import Finalizado from './src/scenes/Finalizado';
+import CatalogDetail from "./src/scenes/CatalogDetail";
 
 const AppNavigator = StackNavigator(
   {
@@ -32,7 +33,13 @@ const AppNavigator = StackNavigator(
       }, 
       FinalizadoScreen: {
         screen: Finalizado        
-      } 
+      }, 
+      CatalogDetailScreen :{
+        screen: CatalogDetail,
+        navigationOptions: () => ({
+          title: 'Product Detail'
+        })
+      },
   },
   {
     initialRouteName: 'CatalogoScreen',

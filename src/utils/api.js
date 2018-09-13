@@ -1,28 +1,35 @@
-const API_ENDPOINT = "https://shoppingproducts.herokuapp.com";
+const BASE_API = 'https://shoppingproducts.herokuapp.com';
 
 class Api {
 
-    async getProducts() {
-        try{
-            const query = await fetch(`${API_ENDPOINT}/products`);
-            const data = await query.json();
-            return data;
-        }catch(error){
-            console.log(error);
-        }
-    }
-    
-
-    async getProductDetail(id) {
-        try{
-            const query = await fetch(`${API_ENDPOINT}/products/${id}`);
-            const data = await query.json();
-            return data;
-        }catch(error){
-            console.log(error);
-        }
+    /**
+     * Método para obtener todos los registros de los Productos del servicio
+     */
+    getProducts(){
+        let promise = new Promise( (resolve, reject) => {
+            fetch(`${BASE_API}/products`)
+            .then( response => response.json())
+            .then( data => resolve(data) )
+            .catch (error =>{
+                reject(error)
+            })
+            .catch( error => reject(error) )
+        });
+        return promise;
     }
 
+    getProductDetail(id){
+        let promise = new Promise( (resolve, reject) => {
+            fetch(`${BASE_API}/products/${id}`)
+            .then( response => response.json())
+            .then( data => resolve(data) )
+            .catch (error =>{
+                reject(error)
+            })
+            .catch( error => reject(error) )
+        });
+        return promise;
+    }
 }
 
-export default new Api();//No es del framework React-Native, hace parte d eEcmaScript 2016
+export default new Api();

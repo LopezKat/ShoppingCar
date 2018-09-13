@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image, TouchableHighlight } from 'react-native'
 
 const ItemCatalogo = (props) => (
     <TouchableHighlight 
-        onPress={( )=> props.navigation.navigate('DetalleScreen', {idProduct: props.catalogo._id})}
+        onPress={( )=> props.navigation.navigate('CatalogDetailScreen', {idProduct: props.catalogo._id})}
         underlayColor="#ccc"  
     >
         <View style={styles.container}>
