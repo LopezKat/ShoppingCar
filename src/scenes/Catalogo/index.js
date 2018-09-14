@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { View, Text, Button, FlatList } from 'react-native';
+import { View, Text, Button, FlatList,Home,Header } from 'react-native';
 import ItemCatalogo from './componentes/item-catalogo';
 import ItemSeparator from './componentes/item.separator';
 

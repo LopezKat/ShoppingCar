@@ -3359,9 +3359,9 @@
                     "position": {
                         "startLine": 1,
                         "startColumn": 4,
-                        "startOffset": 17,
+                        "startOffset": 16,
                         "endColumn": 48,
-                        "endOffset": 61
+                        "endOffset": 60
                     }
                 }
             },
@@ -3951,10 +3951,10 @@
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 57,
+                        "startOffset": 54,
                         "endLine": 5,
                         "endColumn": 12,
-                        "endOffset": 182
+                        "endOffset": 177
                     }
                 }
             },
