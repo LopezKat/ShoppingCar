@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
-import { View, Text, Button, FlatList,Home,Header } from 'react-native';
+import { View, Text, Button, FlatList,} from 'react-native';
 import ItemCatalogo from './componentes/item-catalogo';
 import ItemSeparator from './componentes/item.separator';
 
-import Api from '../../utils/api';
-
+import Home from '../Home';
+import Header from '../Header';
 import HttpProduct from "../../services/Product/http-products";
+
 
 class Catalogo extends Component {
 
